@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PortfolioPerfect</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 1, 2021 1:54:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu" id="portfolio-perfect-collapse">
+                    <ul class="nav navbar-nav navbar-dark">
+                        <li class="page-scroll"><a href="#hero">Home</a></li>
+                        <li class="page-scroll"><a href="#Información">Información</a></li>
+                        <li class="page-scroll"><a href="#tratamientos">Tratamientos</a></li>
+                        <li class="page-scroll"><a href="#productos">Productos</a></li>
+                        <li class="page-scroll"><a href="#contactos">Contactos</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+
+    <div id="hero" class="hero">
+
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+        
+        <section id="Información" class="site-section section-about text-center">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-12">
+                        <h3 style="text-align: center;color:#b4b011">El Cannabis Medicinal</h3>
+                        <h5 style="text-align: center;">Actualización, <span class="w3-opacity">May 18, 2019</span></h5>                          
+                    <div class="col-sm-12">
+                        <img src="assets/img/info.jpg" alt="Notebook" style="width:100%;">
+                      </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="text-align: center;color:#11a9b4" class="col-md-12 col-md-offset-0">
+                            <h4 style="color:#b4b011">Información General</h4>
+                            <p style="text-align: justify;color:#11a9b4">Si bien se usan indistintamente significan lo mismo. El uso terapéutico muchas veces ocurre en ausencia de los criterios que dan al cannabis la calidad medicinal. Se llama Cannabis de Grado Médico que tiene con control de calidad, cuya producción esta estandarizada y que cumple con las normas internacionales para medicamentos herbales. 
+                                El uso medicinal del cannabis se refiere sobre todo al fin que le damos y no a su calidad.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- /.secton-about -->
+<hr>
+     
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 style="text-align: center;color:#b4b011">Uso Medicinal del Cannabis</h3>
+                <hr>
+            </div>
+            <div class="col-sm-6">
+                <div class="service">
+                    <img src="assets/img/usos.jpg" alt="Front End Developer" style="width:100%;">
+                    <h4 style="color:#b4b011">Enfermedades que pueden mejorar con el Uso Cannabis Medicinal</h4>
+                    <h6>Actualización, <span class="w3-opacity">Febreo 21, 2020</span></h6>
+                    <br>
+                    <p style="text-align: justify;color:#11a9b4">No todos los casos logran el mismo grado de respuesta positiva, pero las enfermedades en las que pueden evidenciarse beneficios son:</p>
+                        <br>
+                        <p style="text-align: justify;color:#11a9b4">- Osteoartritis (artrosis), Artritis reumatoide, Artritis psoriásica, Lupus eritematoso sistémico (Lupus), Esclerodermia, Espondilitis.</p>
+                        <p style="text-align: justify;color:#11a9b4">- Fibromialgia, Gota, Polimiositis, Bursitis, Tendinitis, Enfermedad de Behçet, Enfermedad de Crohn, Síndrome de Sjögren, Diabetes Mellitus, Tiroiditis.</p>
+                        <hr>
+                        <p style="text-align: justify;color:#11a9b4">- Epilepsia, Parkinson, Alzheimer, Esclerosis Múltiple, Síndrome de G. Tourette.</p>
+                        <br>
+                        <p style="text-align: justify;color:#11a9b4">- Autismo, Enfermedad de Crohn y otras enfermedades intestinales inflamatorias, Náuseas – Vómitos, Anorexia – Caquexia.</p>
+                        <br>
+                        <p style="text-align: justify;color:#11a9b4">- Acné, Psoriaris, Sindrome de Estrés Postraumático, Ansiedad, Psicosis, Adicción, Insomnio, Migraña.</p>
+                        <br>
+                        <p style="text-align: justify;color:#11a9b4">- Dolor crónico: neuropático, metastásico, inflamatorio, Fibromialgia, Lupus, Poliartritis Reumatoide.</p>
+                        <br>
+                        <p style="text-align: justify;color:#11a9b4">- Diabetes Tipo I, Tiroiditis de Hashimoto, Osteoporosis, Efectos secundarios de la quimioterapia, Acompañamiento de la radio y quimioterapia, VIH-SIDA y Sind. Consuntivo, Estadios terminales, Glaucoma de ángulo abierto.</p>
+                </div><!-- /.service -->
+            </div>
+            <div class="col-sm-6">
+                <div class="service">
+                    <img src="assets/img/efectos.jpg" alt="Back End Developer" style="width:100%;">
+                    <h4 style="color:#b4b011">Efectos positivos con el uso del Cannabis Medicinal</h4>
+                    <h6>Actualización, <span class="w3-opacity">Marzo 11, 2020</span></h6>
+                    <br>
+                    <p style="text-align: justify;color:#11a9b4">Los usos potencialmente beneficiosos pueden verse en muchas enfermedades, debido a que casi todos los órganos y sistemas 
+                        tienen sitios para que pueda ejercer su efecto por la acción de los principios activos de la planta (cannabinoides).</p>
+                        <br>
+                    <p style="text-align: justify;color:#11a9b4">Conociendo los efectos beneficiosos del cannabis y los cannabinoides sobre la salud, se comprende el uso medicinal:</p>
+                        <br>
+                    <p style="text-align: justify;color:#11a9b4">- Anti-inflamatorio, Analgésico, Protector y reparador del tejido nervioso, Anticonvulsivante, Ansiolítico & Antipsicótico.</p>
+                        <br>
+                    <p style="text-align: justify;color:#11a9b4">- Relajante muscular, Anti-tumoral, Anti-náusea y anti-vomitivo, Antiespasmódico, 
+                        Estimulante del apetito, Inductor del sueño, Regulador de la inmunidad, Antioxidante, Preventivo de la 
+                        Recaída y del Síndrome de Abstinencia.</p>
+                        <br>
+                    <p style="text-align: justify;color:#11a9b4">Epilepsia, Parkinson, Alzheimer, Esclerosis Múltiple, Síndrome de G. Tourette, Autismo, Enfermedad de Crohn y otras enfermedades intestinales inflamatorias,
+                        Náuseas – Vómitos, Anorexia – Caquexia, Acné, Psoriaris, Sindrome de Estrés Postraumático, Ansiedad, Psicosis,
+                        Adicción, Insomnio, Dolor crónico: neuropático, metastásico, inflamatorio, Migraña, Fibromialgia,
+                        Lupus, Poliartritis Reumatoide, Diabetes Tipo I, Tiroiditis de Hashimoto,  Osteoporosis, Efectos secundarios de la quimioterapia,
+                        Acompañamiento de la radio y quimioterapia, VIH-SIDA y Sind. Consuntivo, Estadios terminales, Glaucoma de ángulo abierto</p>
+                    <br>
+                </div><!-- /.service -->
+            </div>
+        </div>
+    </div>
+<hr>
+ 
+
+<!-- /.secton-skills -->
+
+        <section id="tratamientos" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="color:#b4b011">Cannabis y sus tratamientos</h3>
+                        <hr>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="service">
+                            <img src="assets/img/reumaticas.jpg" alt="Front End Developer" style="width:100%;">
+                            <h4 style="color:#b4b011">CANNABIS EN LAS ENFERMEDADES REUMÁTICAS</h4>
+                            <h6>Actualización, <span class="w3-opacity">Abril 24, 2020</span></h6>
+                            <br>
+                            <p style="text-align: justify;color:#11a9b4">Bajo el nombre de enfermedades reumáticas se agrupan una serie de múltiples enfermedades de origen 
+                                diverso y gravedad variable que afectan el sistema osteo-articular y músculo-tendinoso, y que se 
+                                manifiestan por dolor, deformación progresiva y limitación funcional. Algunas de ellas además pueden 
+                                comprometer órganos internos como el corazón y otras vísceras.</p>
+                                <hr>
+                            <h4 style="color:#b4b011">Algunas de estas dolencias son:</h4>
+                                <p style="text-align: justify;color:#11a9b4">- Osteoartritis (artrosis), Artritis reumatoide, Artritis psoriásica, Lupus eritematoso sistémico (Lupus), Esclerodermia, Espondilitis.</p>
+                                <p style="text-align: justify;color:#11a9b4">- Fibromialgia, Gota, Polimiositis, Bursitis, Tendinitis, Enfermedad de Behçet, Enfermedad de Crohn, Síndrome de Sjögren, Diabetes Mellitus, Tiroiditis.</p>
+                                <hr>
+                            <h4 style="color:#b4b011">Efectos del cannabis en las enfermedades reumáticas</h4>
+                              <hr>
+                            <p style="text-align: justify;color:#11a9b4">Es de todos sabido que los cannabinoides y particularmente el THC y CBD tienen 
+                                efecto antiinflamatorio y analgésico, y de ahí su aplicación en todos estos procesos. 
+                                De otra parte, el sistema osteo-articular tiene escasez de sitios de acción (receptores) 
+                                para la mayoría de los compuestos, lo que permite explicar la ineficacia de la mayoría de los medicamentos. 
+                                Sin embargo, ha sido demostrada la presencia de sitios de acción para cannabinoides en las articulaciones, 
+                                aún cursando procesos degenerativos como la artrosis.</p>
+                            <p style="text-align: justify;color:#11a9b4">Además del alivio del dolor y reducción de la inflamación, el cannabis y los cannabinoides en las enfermedades 
+                                reumáticas pueden proporcionar otros beneficios sobre el estado general del paciente mejorando la calidad del sueño, 
+                                el apetito, el estado de ánimo, en fin, la calidad de vida.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="service">
+                            <img src="assets/img/epilepsia.jpg" alt="Back End Developer" style="width:100%;">
+                            <h4 style="color:#b4b011">CANNABIS Y EL TRATAMIENTO DE LA EPILEPSIA</h4>
+                            <h6>Actualización, <span class="w3-opacity">Mayo 8, 2020</span></h6>
+                            <br>
+                            <p style="text-align: justify;color:#11a9b4">La epilepsia afecta al 1,5% de la población mundial. Un tercio de esta población sufre lo que se conoce como epilepsia refractaria o 
+                                resistente a tratamiento, es decir, que no responde a los tratamientos convencionales.</p>
+                                <br>
+                            <p style="text-align: justify;color:#11a9b4">Es habitual que los pacientes que sufren de epilepsia refractaria hayan 
+                                experimentado sin éxito varios intentos de control de las crisis con distintos medicamentos 
+                                (de 3 a 5 o más fármacos antiepilépticos y esteroides), así como con otros tratamientos como 
+                                la dieta cetogénica, la estimulación vagal y aún la cirugía. Igualmente, es frecuente que padezcan 
+                                los efectos secundarios de estos tratamientos que se agregan al daño de la enfermedad de base.</p>
+                                <br>
+                            <p style="text-align: justify;color:#11a9b4">En nuestro tiempo, el uso de cannabis y particularmente de cannabidiol (CBD) en 
+                                el tratamiento de la epilepsia, se ha ido extendiendo a partir de los hallazgos de la investigación 
+                                preclínica y clínica, así como de múltiples relatos de mejorías significativas de distintos tipos de epilepsia 
+                                de difícil control no clasificados y en el contexto de síndromes como Dravet, Lennox-Gastaut, Doose y West.</p>
+                                <hr>
+                                <h4 style="color:#b4b011">Acción anticonvulsivante del CBD en el tratamiento de la epilepsia</h4>
+                                <hr>
+                            <p style="text-align: justify;color:#11a9b4">Este efecto del CBD fue una de sus primeras acciones descritas por varios investigadores a lo largo de los años 70 y 80.</p>
+                            <br>
+                            <p style="text-align: justify;color:#11a9b4">El o los mecanismos de acción por los que el CBD podría actuar no están completamente comprendidos y conocidos, 
+                                pero sí se sabe que en su presencia aumentan los niveles de anandamida, uno de los cannabinoides endógenos.</p>
+                        </div><!-- /.service -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
+
+
+
+<!-- PRODUCTOS -->
+        <section id="productos" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3 style="color:#b4b011">Productos disponibles</h3>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/aceite.jpg" class="img-res" style="height:100%;">
+                            <div class="portfolio-item-info">
+                                <h4>Aceite Organico</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span>Información</span></a>
+                                <a href="#contactos"><span></span>Precios</a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/jabones.jpg" class="img-res" style="height:100%;">
+                            <div class="portfolio-item-info">
+                                <h4>Jabón Fito Cannabis</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span>Información</span></a>
+                                <a href="#contactos"><span></span>Precios</a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/crema.jpg" class="img-res" style="height:100%;">
+                            <div class="portfolio-item-info">
+                                <h4>Crema Cannabis y Ozono</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span>Información</span></a>
+                                <a href="#contactos"><span></span>Precios</a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/terapeutico.jpg" class="img-res" style="height:100%;">
+                            <div class="portfolio-item-info">
+                                <h4>Aceite Corporal Terapéutico</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span>Información</span></a>
+                                <a href="#contactos"><span></span>Precios</a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section><!-- /.secton-portfolio -->
+
+        <section class="site-section section-counters text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter start" data-to="5" data-speed="2000">0</p>
+                        <h4>Años de Experiencia</h4>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter start" data-to="587" data-speed="2000">0</p>       
+                        <h4>Envios realizados a clientes</h4>      
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                        <h4>Tiempo actual de su visita en este sitio web<br></h4>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-counters -->
+
+
+<!-- CONTACTOS -->
+        <section id="contactos" class="site-section section-form text-center">
+            <div class="container">
+
+                <h3 style="color:#b4b011">Contactos</h3>
+                <hr>             
+                <form>
+                    <div class="row">
+                    </div>
+                    <img src="assets/img/suscribete.jpg" class="img-lines" alt="lines">
+                        <hr>
+                       <a href="https://wa.me/0999589095" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#b4b011">WhatsApp <span class="glyphicon glyphicon-send" ></span></a>
+                       <a href="https://t.me/FitoKanabbis_bot" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#11a9b4">Telegram <span class="glyphicon glyphicon-envelope"></span></a>
+                       <a href="#portfolioItem5" data-toggle="modal" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#fd77f6">Envios <span class="glyphicon glyphicon-envelope"></span></a>
+                </form>
+            </div>  
+            <div class="row">
+              <h4 style="text-align: center;color:#11a9b4"> Año Nuevo</h4>
+              <h1 style="text-align: center;color:#b4b011" id="demo"></h1>
+          </div>          
+        </section><!-- /.section-form -->
+
+<!-- /*=============================================
+=               Mapa de ubicación                   =
+=============================================*/ -->
+<div class="w3-white w3-margin">
+  <div class="w3-container w3-padding w3-lime">
+    <hr>
+    <h3 style="text-align: center;color:#fdfdfd">Mapa de Ubicación</h3>
+    <hr>
+    <section id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.796089874053!2d-78.49417128569947!3d-0.1912650354646014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a65de1af1d3%3A0x3e9a0bcea0147bd9!2sInglaterra%2C%20Quito%20170515!5e0!3m2!1ses-419!2sec!4v1595527422789!5m2!1ses-419!2sec" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <hr>
+    <div style="text-align: center;color:#080808" >
+      <span class="parpadea text"><strong>Por emergencia sanitaria del Covid-19, se envia pedidos On-line.</strong>
+    </div>
+    
+    <hr>
+  </div>
+  
+</div> 
+
+    </main><!-- /#main -->
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a class="icon facebook-bg"  href="#"><i class="icon-facebook"></i></a>
+                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
+                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+                </div>
+                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">PG 2020. All Rights Reserved</p></div>
+                <div class="col-sm-4 col-xs-3">
+                    <div class="text-right page-scroll">
+                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- /#footer -->
+
+
+    <!-- INFORMACIÓN DE LOS PRODUCTOS -->
+    <!-- Modals -->
+    <div id="portfolioItem1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/aceite-1.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 style="color:#b4b011" class="text-center">Aceite Organico</h4>
+            <h5 style="text-align: left;color:#11a9b4">- Estos componentes te ayudan para el dolor crónico, es analgésico, antinflamatorio, desinflamatorio.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Ayuda en tratamientos para la epilepsia, Alzheimer, Parkinson, fibromialgia, Esclerosis múltiple, Esquizofrenia.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Es Antidepresivo, Relajante mental y físico, Regenerador neuronal, Neuro protector, Anticonvulsivo.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Mejora las funciones fisiológicas del organismo como el sueño, Digestión, Función cerebral, Inmunológica Endocrina, etc.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Además, ayuda en dolores por: Artritis, Reumas, Osteoporosis.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Afecciones de la piel como: Acné, Psoriasis, Eccemas.</h5>
+            <hr>
+                <h4 class="text-center" style="color:#ec370a">Gotero de 20 ml: $ 25 dólares</h4>
+                <h4 class="text-center" style="color:#ec370a">Gotero de 50 ml: $ 35 dólares</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="https://wa.me/0999589095" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#b4b011">WhatsApp <span class="glyphicon glyphicon-send" ></span></a>
+            <a href="https://t.me/FitoKanabbis_bot" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#11a9b4">Telegram <span class="glyphicon glyphicon-envelope"></span></a>
+            <a href="#portfolioItem5" data-toggle="modal" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#fd77f6">Envios <span class="glyphicon glyphicon-envelope"></span></a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/jabones-1.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 style="color:#b4b011" class="text-center">Jabón Fito Cannabis</h4>
+            <h5 style="color:#b4b011">Jabón de Glicerina + Cannabis + Crema + Coco</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Elaborado con jabón de glicerina, Cannabis fresco, Crema de cannabis one to one, aceite puro de coco. Es un jabón completo además de las propiedades anti oxidantes del cannabis brinda humectación e hidratación a la piel.
+              La crema y el aceite de coco son antisépticos ayudando a alimpiar profundamente. Deja la piel Luminosa y fresca.</h5>
+            <h5 style="color:#b4b011" >Jabón de Glicerina + Cannabis + Crema + Coco</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Elaborado con base de jabón virgen, Cannabis y Carbón Activado.
+              Además de las propiedades del Cannabis, Calmante, Anti oxidante, Fortalece la barrera natural de la piel.
+              El carbón activado limpia y purifica la piel de forma suave y natural. Absorbe el exceso de grasa. Anti bacterial, Desinfectante.
+              Excelente para tratar el acné y piel grasosa.</h5>
+            <h5 style="color:#b4b011">Jabón de Glicerina Cannabis + Carbón activado + Coco</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Es un jabón antiséptico, purificante y humectante.
+              Está elaborado con jabón de glicerina, carbón activado, aceite puro de coco.
+              Excelente para tratar acné y piel grasosa.
+              Ayuda en eccemas, Psoriasis, Piel sensible y Hongos. </h5>
+            <h5 style="color:#b4b011">Jabón de Glicerina + Crema de raíz de  Cannabis + Coco</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Elaborado con jabón de glicerina, crema de raíz de cannabis, aceite de coco puro.
+              La raíz de cannabis tiene propiedades regenerativas en la piel.
+              Además calma y relaja.
+              Ayuda a desinflamar</h5>
+            <h5 style="color:#b4b011">Jabón de Cannabis</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Elaborado con jabón virgen de cannabis.
+              No contiene colorantes y sin aroma artificial.
+              Propiedades bondadosas con la piel y cuero cabelludo.
+              Calma la piel en casos de accemas, Psoriasis, Piel sensible, Herpes zoster.
+              Controla el acné, Limpia profundamente y fortalece la barrera natural de la piel y contine antioxidantes.</h5>
+            <hr>
+            <h4 class="text-center" style="color:#ec370a">El costo por jabón: $ 5 dólares</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="https://wa.me/0999589095" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#b4b011">WhatsApp <span class="glyphicon glyphicon-send" ></span></a>
+            <a href="https://t.me/FitoKanabbis_bot" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#11a9b4">Telegram <span class="glyphicon glyphicon-envelope"></span></a>
+            <a href="#portfolioItem5" data-toggle="modal" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#fd77f6">Envios <span class="glyphicon glyphicon-envelope"></span></a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/crema-1.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 style="color:#b4b011" class="text-center">Crema Cannabis y Ozono</h4>
+            <h5 style="text-align: left;color:#11a9b4">- Alivia el dolor articular, musculos, golpes, torceduras, artritis, artosis.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Mejora la osteoporosis, reumas, esclesosis multiple, ayuda en la circulación de varices.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Afecciones a nivel cutaneo como: psoriasis, eccemas y similares.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Mejoramiento con dolores crónicos.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Alivia el dolor por fibromialgia.</h5>
+            <h5 style="text-align: left;color:#11a9b4">- Además posee las propiedades del ozono que son: antioxidante, oxigenante.</h5> 
+            <h5 style="text-align: left;color:#11a9b4">- Es bactericida y al funcionar a nivel célular potencializa y profundiza los efectos terapéuticos.</h5> 
+                <hr>
+                <h4 class="text-center" style="color:#ec370a">Frasco: $ 20 dólares</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="https://wa.me/0999589095" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#b4b011">WhatsApp <span class="glyphicon glyphicon-send" ></span></a>
+            <a href="https://t.me/FitoKanabbis_bot" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#11a9b4">Telegram <span class="glyphicon glyphicon-envelope"></span></a>
+            <a href="#portfolioItem5" data-toggle="modal" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#fd77f6">Envios <span class="glyphicon glyphicon-envelope"></span></a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem4" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/terapeutico-1.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 style="color:#b4b011" class="text-center">Aceite Corporal Terapéutico</h4>
+            <h5 style="text-align: justify;color:#11a9b4">- Es analgésico, anti inflamatorio, desinflamatorio.</h5>
+            <h5 style="text-align: justify;color:#11a9b4">- El alcanfor es la resina de un árbol de origen asiático, es analgésico, antiséptico, anti picazón, ayuda a la circulación.</h5> 
+            <h5 style="text-align: justify;color:#11a9b4">- Alivia dolor articular, muscular, golpes, torceduras, artritis, artrosis.</h5>   
+            <h5 style="text-align: justify;color:#11a9b4">- Mejora la osteoporosis, varices.</h5>
+            <h5 style="text-align: justify;color:#11a9b4">- Alivia las afecciones a nivel cutáneo como: psoriasis, eccemas y similares.</h5>   
+              <hr>
+              <h4 class="text-center" style="color:#ec370a">Spray de 100 ml: $ 20 dólares</h4>
+              <h4 class="text-center" style="color:#ec370a">Spray de 200 ml: $ 40 dólares</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="https://wa.me/0999589095" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#b4b011">WhatsApp <span class="glyphicon glyphicon-send" ></span></a>
+            <a href="https://t.me/FitoKanabbis_bot" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#11a9b4">Telegram <span class="glyphicon glyphicon-envelope"></span></a>
+            <a href="#portfolioItem5" data-toggle="modal" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#fd77f6">Envios <span class="glyphicon glyphicon-envelope"></span></a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="assets/img/delivery.jpg" alt="">
+            </div>
+            <div class="modal-footer">
+              <a href="https://wa.me/0999589095" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#b4b011">WhatsApp <span class="glyphicon glyphicon-send" ></span></a>
+              <a href="https://t.me/FitoKanabbis_bot" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#11a9b4">Telegram <span class="glyphicon glyphicon-envelope"></span></a>
+              <a href="#portfolioItem5" data-toggle="modal" target="_blank" class="parpadea btn btn-border" type="submit" style="color:#fd77f6">Envios <span class="glyphicon glyphicon-envelope"></span></a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  
+</body>
+</html>
